@@ -1,0 +1,43 @@
+name: CI
+
+# Tag pushes are handled by release.yml, which builds the release binaries.
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  test:
+    name: test (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    permissions:
+      contents: read
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Install Linux audio dev packages
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libasound2-dev pkg-config
+
+      # `tests/golden.rs` diffs against tools/goldens.json, which is generated
+      # locally by tools/gen_goldens.py and not committed, so only the unit
+      # tests in the library run here.
+      - name: Unit tests
+        run: cargo test --lib --locked
+
+      - name: Release build
+        run: cargo build --release --locked

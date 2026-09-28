@@ -1,0 +1,115 @@
+name: Release
+
+# Pushing a `v*` tag builds every target below and attaches the archives to a
+# GitHub Release. Running the workflow manually builds the same archives and
+# leaves them as workflow artifacts, without publishing a release.
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+env:
+  CARGO_TERM_COLOR: always
+  BIN: world-execute-me-rust
+
+jobs:
+  build:
+    name: build ${{ matrix.target }}
+    runs-on: ${{ matrix.os }}
+    permissions:
+      contents: read
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # glibc builds; require glibc >= the runner's (Ubuntu 24.04).
+          - os: ubuntu-latest
+            target: x86_64-unknown-linux-gnu
+          - os: ubuntu-24.04-arm
+            target: aarch64-unknown-linux-gnu
+          - os: windows-latest
+            target: x86_64-pc-windows-msvc
+          - os: windows-11-arm
+            target: aarch64-pc-windows-msvc
+          # macos-latest is Apple Silicon; the x86_64 build is cross-compiled
+          # from it (the macOS SDK carries both architectures).
+          - os: macos-latest
+            target: aarch64-apple-darwin
+          - os: macos-latest
+            target: x86_64-apple-darwin
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          key: ${{ matrix.target }}
+
+      # cpal's ALSA backend links against libasound, and alsa-sys probes it
+      # through pkg-config.
+      - name: Install Linux audio dev packages
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libasound2-dev pkg-config
+
+      - name: Build
+        run: cargo build --release --locked --target ${{ matrix.target }}
+
+      # The song, lyrics, config and spectrum data are embedded with
+      # include_bytes!/include_str!, so the archive is the binary plus docs.
+      - name: Package (Unix)
+        if: runner.os != 'Windows'
+        shell: bash
+        run: |
+          set -euo pipefail
+          out="$BIN-${{ matrix.target }}"
+          bin="target/${{ matrix.target }}/release/$BIN"
+          # Stripping an arm64 Mach-O binary can leave it without a valid
+          # ad-hoc signature, so only the Linux binaries are stripped.
+          if [ "${{ runner.os }}" = "Linux" ]; then strip "$bin" || true; fi
+          mkdir -p "stage/$out" dist
+          cp "$bin" "stage/$out/"
+          for f in README.md LICENSE; do
+            if [ -f "$f" ]; then cp "$f" "stage/$out/"; fi
+          done
+          tar -C stage -czf "dist/$out.tar.gz" "$out"
+
+      - name: Package (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $out = "$env:BIN-${{ matrix.target }}"
+          New-Item -ItemType Directory -Force -Path "stage/$out", "dist" | Out-Null
+          Copy-Item "target/${{ matrix.target }}/release/$env:BIN.exe" "stage/$out/"
+          foreach ($f in @("README.md", "LICENSE")) {
+            if (Test-Path $f) { Copy-Item $f "stage/$out/" }
+          }
+          Compress-Archive -Path "stage/$out" -DestinationPath "dist/$out.zip"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.BIN }}-${{ matrix.target }}
+          path: dist/*
+          if-no-files-found: error
+
+  release:
+    name: publish release
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
+
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*
+          generate_release_notes: true
