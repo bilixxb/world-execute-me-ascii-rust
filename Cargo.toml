@@ -1,0 +1,24 @@
+[package]
+name = "world-execute-me-rust"
+version = "0.1.0"
+edition = "2021"
+description = "world.execute(me); — bilingual terminal MV, Rust port of world.execute-me-ascii"
+license = "MIT"
+
+[dependencies]
+crossterm = "0.28"
+# `symphonia-mp3` pulls in the symphonia decoder for the bundled MP3; the
+# `playback` feature name does not exist in rodio 0.20 (playback is always on).
+rodio = { version = "0.20", default-features = false, features = ["symphonia-mp3"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+unicode-width = "0.2"
+
+[dev-dependencies]
+serde_json = "1"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+panic = "abort"

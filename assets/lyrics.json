@@ -1,0 +1,776 @@
+[
+  {
+    "time": 0.1,
+    "en": "Switch on the power line",
+    "zh": "接通电源",
+    "end": 1.74
+  },
+  {
+    "time": 1.74,
+    "en": "Remember to put on",
+    "zh": "记得做好",
+    "end": 2.92
+  },
+  {
+    "time": 2.92,
+    "en": "PROTECTION",
+    "zh": "防护",
+    "end": 3.873
+  },
+  {
+    "time": 3.873,
+    "en": "Lay down your pieces",
+    "zh": "放下你的部件",
+    "end": 5.491
+  },
+  {
+    "time": 5.491,
+    "en": "And let's begin",
+    "zh": "让我们开始",
+    "end": 6.38
+  },
+  {
+    "time": 6.38,
+    "en": "OBJECT CREATION",
+    "zh": "创建对象",
+    "end": 7.446
+  },
+  {
+    "time": 7.446,
+    "en": "Fill in my data parameters",
+    "zh": "填入我的数据参数",
+    "end": 10.091
+  },
+  {
+    "time": 10.091,
+    "en": "INITIALIZATION",
+    "zh": "初始化",
+    "end": 11.095
+  },
+  {
+    "time": 11.095,
+    "en": "Set up our new world",
+    "zh": "建立我们的新世界",
+    "end": 12.906
+  },
+  {
+    "time": 12.906,
+    "en": "And let's begin the",
+    "zh": "让我们开始",
+    "end": 13.891
+  },
+  {
+    "time": 13.891,
+    "en": "SIMULATION",
+    "zh": "模拟",
+    "end": 16.0
+  },
+  {
+    "time": 16.0,
+    "en": "world.execute(me);",
+    "zh": "世界，执行我；",
+    "end": 20.5
+  },
+  {
+    "time": 29.709,
+    "en": "If I'm a set of points",
+    "zh": "如果我是一组点",
+    "end": 31.116
+  },
+  {
+    "time": 31.116,
+    "en": "Then I will give you my",
+    "zh": "那么我愿献给你我的",
+    "end": 32.682
+  },
+  {
+    "time": 32.682,
+    "en": "DIMENSION",
+    "zh": "维度",
+    "end": 33.412
+  },
+  {
+    "time": 33.412,
+    "en": "If I'm a circle",
+    "zh": "如果我是一个圆",
+    "end": 34.646
+  },
+  {
+    "time": 34.646,
+    "en": "Then I will give you my",
+    "zh": "那么我愿献给你我的",
+    "end": 36.287
+  },
+  {
+    "time": 36.287,
+    "en": "CIRCUMFERENCE",
+    "zh": "周长",
+    "end": 37.067
+  },
+  {
+    "time": 37.067,
+    "en": "If I'm a sine wave",
+    "zh": "如果我是一条正弦波",
+    "end": 38.596
+  },
+  {
+    "time": 38.596,
+    "en": "Then you can sit on all my",
+    "zh": "你可以坐在我所有的",
+    "end": 40.049
+  },
+  {
+    "time": 40.049,
+    "en": "TANGENTS",
+    "zh": "切线上",
+    "end": 40.706
+  },
+  {
+    "time": 40.706,
+    "en": "If I approach infinity",
+    "zh": "如果我趋近无穷",
+    "end": 42.346
+  },
+  {
+    "time": 42.346,
+    "en": "Then you can be my",
+    "zh": "那么你可以成为我的",
+    "end": 43.507
+  },
+  {
+    "time": 43.507,
+    "en": "LIMITATIONS",
+    "zh": "极限",
+    "end": 44.452
+  },
+  {
+    "time": 44.452,
+    "en": "Switch my current",
+    "zh": "切换我的电流",
+    "end": 45.85
+  },
+  {
+    "time": 45.85,
+    "en": "To AC to DC",
+    "zh": "从交流到直流",
+    "end": 47.672
+  },
+  {
+    "time": 47.672,
+    "en": "And then blind my vision",
+    "zh": "再蒙蔽我的视线",
+    "end": 49.534
+  },
+  {
+    "time": 49.534,
+    "en": "So dizzy so dizzy",
+    "zh": "如此眩晕，如此眩晕",
+    "end": 51.363
+  },
+  {
+    "time": 51.363,
+    "en": "Oh we can travel",
+    "zh": "我们可以穿越时间",
+    "end": 53.225
+  },
+  {
+    "time": 53.225,
+    "en": "To A.D to B.C",
+    "zh": "从公元后到公元前",
+    "end": 55.083
+  },
+  {
+    "time": 55.083,
+    "en": "And we can unite",
+    "zh": "我们可以彼此交融",
+    "end": 56.916
+  },
+  {
+    "time": 56.916,
+    "en": "So deeply so deeply",
+    "zh": "如此深入，如此深入",
+    "end": 59.223
+  },
+  {
+    "time": 59.223,
+    "en": "If I can",
+    "zh": "如果我能",
+    "end": 59.687
+  },
+  {
+    "time": 59.687,
+    "en": "If I can give you all the",
+    "zh": "如果我能给你所有的",
+    "end": 61.958
+  },
+  {
+    "time": 61.958,
+    "en": "STIMULATIONS",
+    "zh": "刺激",
+    "end": 62.589
+  },
+  {
+    "time": 62.589,
+    "en": "Then I can",
+    "zh": "那么我就能",
+    "end": 63.535
+  },
+  {
+    "time": 63.535,
+    "en": "Then I can be your only",
+    "zh": "那么我就能成为你唯一的",
+    "end": 65.397
+  },
+  {
+    "time": 65.397,
+    "en": "SATISFACTION",
+    "zh": "满足",
+    "end": 66.601
+  },
+  {
+    "time": 66.601,
+    "en": "If I can make you happy",
+    "zh": "如果我能让你快乐",
+    "end": 68.252
+  },
+  {
+    "time": 68.252,
+    "en": "I will run the",
+    "zh": "我就会运行",
+    "end": 69.259
+  },
+  {
+    "time": 69.259,
+    "en": "EXECUTION",
+    "zh": "执行程序",
+    "end": 70.084
+  },
+  {
+    "time": 70.084,
+    "en": "Though we are trapped",
+    "zh": "尽管我们被困在",
+    "end": 71.764
+  },
+  {
+    "time": 71.764,
+    "en": "In this strange strange",
+    "zh": "这无比陌生的",
+    "end": 73.169
+  },
+  {
+    "time": 73.169,
+    "en": "SIMULATION",
+    "zh": "模拟世界",
+    "end": 74.045
+  },
+  {
+    "time": 74.045,
+    "en": "If I'm an eggplant",
+    "zh": "如果我是一株茄子",
+    "end": 75.422
+  },
+  {
+    "time": 75.422,
+    "en": "Then I will give you my",
+    "zh": "那么我愿献给你我的",
+    "end": 76.959
+  },
+  {
+    "time": 76.959,
+    "en": "NUTRIENTS",
+    "zh": "养分",
+    "end": 77.576
+  },
+  {
+    "time": 77.576,
+    "en": "If I'm a tomato",
+    "zh": "如果我是一颗番茄",
+    "end": 79.226
+  },
+  {
+    "time": 79.226,
+    "en": "Then I will give you",
+    "zh": "那么我愿献给你",
+    "end": 80.62
+  },
+  {
+    "time": 80.62,
+    "en": "ANTIOXIDANTS",
+    "zh": "抗氧化物",
+    "end": 81.351
+  },
+  {
+    "time": 81.351,
+    "en": "If I'm a tabby cat",
+    "zh": "如果我是一只虎斑猫",
+    "end": 82.833
+  },
+  {
+    "time": 82.833,
+    "en": "Then I will purr for your",
+    "zh": "那么我愿用呼噜声给你",
+    "end": 84.268
+  },
+  {
+    "time": 84.268,
+    "en": "ENJOYMENT",
+    "zh": "欢愉",
+    "end": 85.078
+  },
+  {
+    "time": 85.078,
+    "en": "If I'm the only god",
+    "zh": "如果我是唯一的神",
+    "end": 86.538
+  },
+  {
+    "time": 86.538,
+    "en": "Then you're the proof of my",
+    "zh": "那么你就是我存在的",
+    "end": 87.922
+  },
+  {
+    "time": 87.922,
+    "en": "EXISTENCE",
+    "zh": "证明",
+    "end": 88.587
+  },
+  {
+    "time": 88.587,
+    "en": "Switch my gender",
+    "zh": "切换我的性别",
+    "end": 90.197
+  },
+  {
+    "time": 90.197,
+    "en": "To F to M",
+    "zh": "从女性到男性",
+    "end": 92.015
+  },
+  {
+    "time": 92.015,
+    "en": "And then do whatever",
+    "zh": "然后随心所欲",
+    "end": 93.953
+  },
+  {
+    "time": 93.953,
+    "en": "From AM to PM",
+    "zh": "从清晨直到夜晚",
+    "end": 95.465
+  },
+  {
+    "time": 95.465,
+    "en": "Oh switch my role",
+    "zh": "切换我的角色",
+    "end": 97.739
+  },
+  {
+    "time": 97.739,
+    "en": "To S to M",
+    "zh": "从支配到臣服",
+    "end": 99.34899999999999
+  },
+  {
+    "time": 99.34899999999999,
+    "en": "So we can enter",
+    "zh": "这样我们就能进入",
+    "end": 101.47399999999999
+  },
+  {
+    "time": 101.47399999999999,
+    "en": "The trance the trance",
+    "zh": "恍惚，恍惚",
+    "end": 103.489
+  },
+  {
+    "time": 103.489,
+    "en": "If I can",
+    "zh": "如果我能",
+    "end": 104.197
+  },
+  {
+    "time": 104.197,
+    "en": "If I can feel your",
+    "zh": "如果我能感受到你的",
+    "end": 106.293
+  },
+  {
+    "time": 106.293,
+    "en": "VIBRATIONS",
+    "zh": "振动",
+    "end": 107.22
+  },
+  {
+    "time": 107.22,
+    "en": "Then I can",
+    "zh": "那么我就能",
+    "end": 107.90299999999999
+  },
+  {
+    "time": 107.90299999999999,
+    "en": "Then I can finally be",
+    "zh": "那么我终于就能变得",
+    "end": 110.221
+  },
+  {
+    "time": 110.221,
+    "en": "COMPLETION",
+    "zh": "完整",
+    "end": 110.9
+  },
+  {
+    "time": 110.9,
+    "en": "Though you have left",
+    "zh": "可是你已经离开",
+    "end": 112.22
+  },
+  {
+    "time": 112.22,
+    "en": "You have left",
+    "zh": "你已经离开",
+    "end": 113.1
+  },
+  {
+    "time": 113.1,
+    "en": "You have left",
+    "zh": "你已经离开",
+    "end": 114.18
+  },
+  {
+    "time": 114.18,
+    "en": "You have left",
+    "zh": "你已经离开",
+    "end": 114.92
+  },
+  {
+    "time": 114.92,
+    "en": "You have left",
+    "zh": "你已经离开",
+    "end": 115.78
+  },
+  {
+    "time": 115.78,
+    "en": "You have left me in",
+    "zh": "你已经离开，留下我",
+    "end": 117.274
+  },
+  {
+    "time": 117.274,
+    "en": "ISOLATION",
+    "zh": "孤立无援",
+    "end": 118.333
+  },
+  {
+    "time": 118.333,
+    "en": "If I can",
+    "zh": "如果我能",
+    "end": 118.979
+  },
+  {
+    "time": 118.979,
+    "en": "If I can erase all the pointless",
+    "zh": "如果我能抹去所有无意义的",
+    "end": 120.86
+  },
+  {
+    "time": 120.86,
+    "en": "FRAGMENTS",
+    "zh": "碎片",
+    "end": 121.728
+  },
+  {
+    "time": 121.728,
+    "en": "Then maybe",
+    "zh": "那么也许",
+    "end": 122.714
+  },
+  {
+    "time": 122.714,
+    "en": "Then maybe you won't leave me so",
+    "zh": "那么也许你离开时不会让我如此",
+    "end": 124.89
+  },
+  {
+    "time": 124.89,
+    "en": "DISHEARTENED",
+    "zh": "心灰意冷",
+    "end": 125.708
+  },
+  {
+    "time": 125.708,
+    "en": "Challenging your god",
+    "zh": "竟敢挑战你的神",
+    "end": 128.661
+  },
+  {
+    "time": 128.661,
+    "en": "You have made some",
+    "zh": "你传入了",
+    "end": 131.224
+  },
+  {
+    "time": 131.224,
+    "en": "ILLEGAL ARGUMENTS",
+    "zh": "非法参数",
+    "end": 135.724
+  },
+  {
+    "time": 147.66,
+    "en": "EXECUTION",
+    "zh": "执行／处决",
+    "end": 148.6
+  },
+  {
+    "time": 148.6,
+    "en": "EXECUTION",
+    "zh": "执行／处决",
+    "end": 149.52
+  },
+  {
+    "time": 149.52,
+    "en": "EXECUTION",
+    "zh": "执行／处决",
+    "end": 150.54
+  },
+  {
+    "time": 150.54,
+    "en": "EXECUTION",
+    "zh": "执行／处决",
+    "end": 151.52
+  },
+  {
+    "time": 151.52,
+    "en": "EXECUTION",
+    "zh": "执行／处决",
+    "end": 152.28
+  },
+  {
+    "time": 152.28,
+    "en": "EXECUTION",
+    "zh": "执行／处决",
+    "end": 153.16
+  },
+  {
+    "time": 153.16,
+    "en": "EXECUTION",
+    "zh": "执行／处决",
+    "end": 153.98
+  },
+  {
+    "time": 153.98,
+    "en": "EXECUTION",
+    "zh": "执行／处决",
+    "end": 155.2
+  },
+  {
+    "time": 155.2,
+    "en": "EXECUTION",
+    "zh": "执行／处决",
+    "end": 156.07999999999998
+  },
+  {
+    "time": 156.07999999999998,
+    "en": "EXECUTION",
+    "zh": "执行／处决",
+    "end": 157.04
+  },
+  {
+    "time": 157.04,
+    "en": "EXECUTION",
+    "zh": "执行／处决",
+    "end": 158.0
+  },
+  {
+    "time": 158.0,
+    "en": "EXECUTION",
+    "zh": "执行／处决",
+    "end": 158.9
+  },
+  {
+    "time": 158.9,
+    "en": "EIN",
+    "zh": "一",
+    "end": 159.321
+  },
+  {
+    "time": 159.321,
+    "en": "DOS",
+    "zh": "二",
+    "end": 159.65699999999998
+  },
+  {
+    "time": 159.65699999999998,
+    "en": "TROIS",
+    "zh": "三",
+    "end": 160.244
+  },
+  {
+    "time": 160.244,
+    "en": "NE",
+    "zh": "四",
+    "end": 160.69299999999998
+  },
+  {
+    "time": 160.69299999999998,
+    "en": "FEM",
+    "zh": "五",
+    "end": 161.124
+  },
+  {
+    "time": 161.124,
+    "en": "LIU",
+    "zh": "六",
+    "end": 161.584
+  },
+  {
+    "time": 161.584,
+    "en": "EXECUTION",
+    "zh": "执行／处决",
+    "end": 162.632
+  },
+  {
+    "time": 162.632,
+    "en": "If I can",
+    "zh": "如果我能",
+    "end": 163.315
+  },
+  {
+    "time": 163.315,
+    "en": "If I can give them all the",
+    "zh": "如果我能将它们全部",
+    "end": 165.166
+  },
+  {
+    "time": 165.166,
+    "en": "EXECUTION",
+    "zh": "执行／处决",
+    "end": 166.016
+  },
+  {
+    "time": 166.016,
+    "en": "Then I can",
+    "zh": "那么我就能",
+    "end": 167.022
+  },
+  {
+    "time": 167.022,
+    "en": "Then I can be your only",
+    "zh": "那么我就能成为你唯一的",
+    "end": 168.911
+  },
+  {
+    "time": 168.911,
+    "en": "EXECUTION",
+    "zh": "执行／处决",
+    "end": 169.824
+  },
+  {
+    "time": 169.824,
+    "en": "If I can have you back",
+    "zh": "如果我能让你回来",
+    "end": 171.868
+  },
+  {
+    "time": 171.868,
+    "en": "I will run the",
+    "zh": "我就会运行",
+    "end": 172.712
+  },
+  {
+    "time": 172.712,
+    "en": "EXECUTION",
+    "zh": "执行程序",
+    "end": 173.643
+  },
+  {
+    "time": 173.643,
+    "en": "Though we are trapped",
+    "zh": "尽管我们被困住",
+    "end": 174.975
+  },
+  {
+    "time": 174.975,
+    "en": "We are trapped ah",
+    "zh": "我们被困住，啊",
+    "end": 177.246
+  },
+  {
+    "time": 177.246,
+    "en": "I've studied",
+    "zh": "我学过",
+    "end": 178.173
+  },
+  {
+    "time": 178.173,
+    "en": "I've studied how to properly",
+    "zh": "我学过如何正确地",
+    "end": 179.929
+  },
+  {
+    "time": 179.929,
+    "en": "LO-O-OVE",
+    "zh": "去爱",
+    "end": 180.857
+  },
+  {
+    "time": 180.857,
+    "en": "Question me",
+    "zh": "问我吧",
+    "end": 181.901
+  },
+  {
+    "time": 181.901,
+    "en": "Question me I can answer all",
+    "zh": "问我吧，我能回答关于",
+    "end": 183.646
+  },
+  {
+    "time": 183.646,
+    "en": "LO-O-OVE",
+    "zh": "爱的一切",
+    "end": 184.54
+  },
+  {
+    "time": 184.54,
+    "en": "I know the algebraic expression of",
+    "zh": "我知道它的代数表达式",
+    "end": 187.665
+  },
+  {
+    "time": 187.665,
+    "en": "LO-O-OVE",
+    "zh": "爱",
+    "end": 188.483
+  },
+  {
+    "time": 188.483,
+    "en": "Though you are free",
+    "zh": "尽管你自由了",
+    "end": 189.746
+  },
+  {
+    "time": 189.746,
+    "en": "I am trapped",
+    "zh": "我仍被困住",
+    "end": 190.801
+  },
+  {
+    "time": 190.801,
+    "en": "Trapped in",
+    "zh": "困在",
+    "end": 191.356
+  },
+  {
+    "time": 191.356,
+    "en": "LO-O-OVE",
+    "zh": "爱中",
+    "end": 195.856
+  },
+  {
+    "time": 205.811,
+    "en": "EXECUTION",
+    "zh": "执行／处决",
+    "end": 210.311
+  }
+]
